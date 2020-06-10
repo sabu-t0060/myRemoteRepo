@@ -14,7 +14,9 @@ public class myAppTester {
 	  System.out.println("Input your number and press enter: ");
 	  n = input.nextInt();
 	  System.out.print("Reverse of the input number is:");
+	  
 	  reverseMethod(n);
+	  System.out.println("Sum of digits : "+myTestMethod(num));
 	  System.out.println();
 
 	  // add a line below to call your myTestMethod from here  then remove the block comment symbols  
@@ -32,16 +34,17 @@ public class myAppTester {
 	           reverseMethod(num/10);     // recursive call
 	       }
 	   }
-
-
-	   /* 
-	       add your test method in this space then remove the block comment symbols
-	       public static void myTestMethod(...){
-
+	    
+	       //
+	       public static int myTestMethod(int num){
+            int sum=0;
+            n = m % 10;
+            sum = sum + n;
+            m = m / 10;
             
-
+            return sum;
 		   }
 	 
-	   */
+	   
 
 }
